@@ -12,16 +12,10 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 // ── CONFIG ────────────────────────────────────────
-<<<<<<< HEAD
 const CORTEXAI_API_KEY   = process.env.CORTEXAI_API_KEY;
 const CORTEXAI_SUBMIT    = 'https://router.claude.gg/api/generate';
 const CORTEXAI_POLL_BASE = 'https://router.claude.gg/get';
-const MAX_CHARS          = 500;
-=======
-const FISH_API_KEY = process.env.FISH_API_KEY;
-const FISH_API_URL = 'https://api.fish.audio/v1/tts';
-const MAX_CHARS    = 500;
->>>>>>> parent of 832ca44 (chore: karakter limitini 50 olarak guncelle)
+const MAX_CHARS          = 40000;
 
 if (!CORTEXAI_API_KEY) {
   console.error('[ERROR] CORTEXAI_API_KEY is not set. Check your .env file.');
@@ -29,7 +23,7 @@ if (!CORTEXAI_API_KEY) {
 }
 
 // ── MIDDLEWARE ────────────────────────────────────
-app.use(express.json({ limit: '32kb' }));
+app.use(express.json({ limit: '256kb' }));
 
 // ── TTS SUBMIT ────────────────────────────────────
 // POST /api/tts
