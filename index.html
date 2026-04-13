@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- === SEO === -->
+  <title>Metin Seslendirme — Yazıyı Sese Çevir | Ücretsiz TTS Aracı</title>
+  <meta name="description" content="Metin seslendirme aracı: Türkçe metni anında sese çevir. Ücretsiz, tarayıcıda çalışır, kayıt gerekmez. 40.000 karaktere kadar ücretsiz." />
+  <meta name="keywords" content="metin seslendirme, yazıyı sese çevirme, text to speech, sesli okuyucu, türkçe seslendirme, ücretsiz tts, metin okuyucu, ses sentezi" />
+  <link rel="canonical" href="https://metinseslendirme.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://metinseslendirme.com/" />
+  <meta property="og:title"       content="Metin Seslendirme — Yazıyı Sese Çevir" />
+  <meta property="og:description" content="Türkçe metinlerinizi anında sese çevirin. Ücretsiz, hızlı, kayıt gerektirmez." />
+  <meta property="og:locale"      content="tr_TR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Metin Seslendirme — Yazıyı Sese Çevir" />
+  <meta name="twitter:description" content="Türkçe metinlerinizi anında sese çevirin. Ücretsiz TTS aracı." />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- hreflang — dil/bölge sinyalleri -->
+  <link rel="alternate" hreflang="tr" href="https://metinseslendirme.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://metinseslendirme.com/" />
+
+  <!-- PWA — Web App Manifest -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- PWA — iOS / Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MetinSeslendir" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%230f0f0f'/><text y='130' x='20' font-size='100' fill='%23d4ff47'>♪</text></svg>" />
+
+  <!-- PWA — Android / Chrome -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#0f0f0f" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f0f0f'/><text y='22' x='4' font-size='20' fill='%23d4ff47'>♪</text></svg>" />
+
+  <!-- Structured Data — WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Metin Seslendirme",
+    "url": "https://metinseslendirme.com/",
+    "description": "Türkçe ve çok dilli metin seslendirme aracı. Yazıyı anında sese çevirin.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "TRY"
+    }
+  }
+  </script>
+
+  <!-- Structured Data — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Metin seslendirme nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Metin seslendirme (Text-to-Speech, TTS), yazılı bir metni yapay zeka veya bilgisayar sesi kullanarak sesli konuşmaya dönüştüren teknolojidir. Eğitim, erişilebilirlik ve içerik üretimi alanlarında yaygın olarak kullanılır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bu araç ücretsiz mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, 40.000 karaktere kadar tamamen ücretsizdir. Kayıt gerekmez."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Türkçe metin seslendirme nasıl yapılır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Metin kutusuna Türkçe metninizi yazın veya yapıştırın, ses ve hız seçeneğini belirleyin, ardından 'Seslendir' butonuna tıklayın."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =============================================
+       NAV
+       ============================================= -->
+  <header role="banner">
+    <nav class="nav" aria-label="Ana navigasyon">
+      <div class="container--wide">
+        <div class="nav__inner">
+          <a href="/" class="nav__logo" aria-label="MetinSeslendirme Ana Sayfa">
+            <span class="nav__logo-dot" aria-hidden="true"></span>
+            metinseslendirme<span class="text-accent">.com</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <!-- =============================================
+         HERO
+         ============================================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__badges" aria-label="Özellikler">
+          <span class="badge badge--accent">Ücretsiz</span>
+          <span class="badge">Türkçe Destekli</span>
+          <span class="badge">Tarayıcıda Çalışır</span>
+          <span class="badge">Kayıt Gerektirmez</span>
+        </div>
+        <h1 class="hero__title" id="hero-title">
+          Metin <span>Seslendirme.</span>
+        </h1>
+        <p class="hero__sub">
+          Yazıyı anında sese çevir. Türkçe dahil 20+ dil destekli,
+          tarayıcıda çalışan ücretsiz TTS aracı.
+          40.000 karaktere kadar ücretsiz, kayıt gerekmez.
+        </p>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TTS TOOL
+         ============================================= -->
+    <section class="tool-section" aria-labelledby="tool-title">
+      <div class="container">
+        <!-- Section title for SEO / screen readers -->
+        <h2 class="sr-only" id="tool-title">Metin Seslendirme Aracı</h2>
+
+        <div class="tool-card" role="application" aria-label="Metin seslendirme uygulaması">
+
+          <!-- Fake OS window header — Glitch.com aesthetic -->
+          <div class="tool-card__header" aria-hidden="true">
+            <span class="tool-card__dot"></span>
+            <span class="tool-card__dot"></span>
+            <span class="tool-card__dot"></span>
+            <span class="tool-card__title">Ücretsiz Seslendir</span>
+          </div>
+
+          <div class="tool-card__body">
+
+            <!-- Textarea -->
+            <div class="textarea-wrap">
+              <label for="tts-input" class="sr-only">Seslendirilecek metni buraya yazın</label>
+              <textarea
+                id="tts-input"
+                class="tts-textarea"
+                placeholder="Metninizi buraya yazın veya yapıştırın… (Ctrl+Enter ile seslendir)"
+                aria-describedby="char-info"
+                spellcheck="true"
+                lang="tr"
+              ></textarea>
+            </div>
+
+            <!-- Char counter -->
+            <div class="char-counter" id="char-info" aria-live="polite" aria-atomic="true">
+              <span>
+                <span id="char-num" class="char-counter__num">0</span>
+                <span class="text-muted"> / <span id="char-max">40.000</span> karakter</span>
+              </span>
+              <span class="text-muted" aria-hidden="true">Ctrl+Enter → Seslendir</span>
+            </div>
+
+            <!-- Controls Row 1: Voice ID + Stability -->
+            <div class="controls-row">
+              <div class="control-group">
+                <label class="control-label" for="voice-id-input">Ses Seç</label>
+                <select
+                  id="voice-id-input"
+                  class="control-input"
+                  aria-label="Ses seçimi"
+                >
+                  <option value="FF7KdobWPaiR0vkcALHF">David — Epic Movie Trailer</option>
+                  <option value="Q2IX97JeHBY3vNGzgM5s">Cavit — News Anchor, TV</option>
+                  <option value="oR4uRy4fHDUGGISL0Rev">Myrddin — Magical Narrator &amp; Wise Mentor</option>
+                  <option value="Jlv2ZNjZLZxnvSEXE6Oc">Chris — Soft, Natural and Slow</option>
+                  <option value="dNjajZuUYmsgcT357Rhg">Emre Gökçe — Convincing, Warm</option>
+                  <option value="K72v6nhNPFHUbP76lOVL">Onur — Breathy, Smooth and Clear</option>
+                  <option value="jaicbKf2LuAoprMLZ5Gd">Yeşilçam Sevdası</option>
+                  <option value="VtLFdkOJSt8TuXqwEzD8">Ykut Akkaşoğlu — Professional Voiceover</option>
+                  <option value="WdZjiN0nNcik2LBjOHiv">David — Raspy and Soft</option>
+                </select>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="stability-slider">
+                  Kararlılık — <span id="stability-val">0.50</span>
+                </label>
+                <div class="speed-row">
+                  <input
+                    type="range"
+                    id="stability-slider"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="0.5"
+                    aria-label="Ses kararlılığı"
+                    aria-valuemin="0"
+                    aria-valuemax="1"
+                    aria-valuenow="0.5"
+                  />
+                  <span class="speed-label-val" aria-hidden="true" id="stability-val-display">0.50</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls Row 2: Speed -->
+            <div class="controls-row controls-row--single">
+              <div class="control-group">
+                <label class="control-label" for="speed-slider">
+                  Hız — <span id="speed-val">1.0x</span>
+                </label>
+                <div class="speed-row">
+                  <input
+                    type="range"
+                    id="speed-slider"
+                    min="0.7"
+                    max="1.2"
+                    step="0.05"
+                    value="1"
+                    aria-label="Konuşma hızı"
+                    aria-valuemin="0.7"
+                    aria-valuemax="1.2"
+                    aria-valuenow="1"
+                  />
+                  <span class="speed-label-val" aria-hidden="true" id="speed-val-display">1.0x</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-row">
+              <button id="btn-play" class="btn btn--primary" aria-label="Metni seslendir">
+                <span class="btn__icon" aria-hidden="true">▶</span>
+                Seslendir
+              </button>
+              <button id="btn-stop" class="btn btn--ghost" disabled aria-label="Seslendirmeyi durdur">
+                <span class="btn__icon" aria-hidden="true">■</span>
+                Durdur
+              </button>
+              <button
+                id="btn-download"
+                class="btn btn--ghost"
+                disabled
+                aria-label="MP3 dosyasını indir"
+              >
+                <span class="btn__icon" aria-hidden="true">↓</span>
+                MP3 İndir
+              </button>
+              <button id="btn-clear" class="btn btn--ghost" aria-label="Metni temizle">
+                <span class="btn__icon" aria-hidden="true">✕</span>
+                Temizle
+              </button>
+            </div>
+
+            <!-- Audio Player (shown after TTS completes) -->
+            <div class="audio-player-wrap" id="audio-player-wrap" role="region" aria-label="Ses oynatıcı">
+              <audio id="tts-audio" controls preload="none" aria-label="Seslendirme çıktısı"></audio>
+            </div>
+
+            <!-- Status / Playing Bar -->
+            <div class="playing-bar" id="playing-bar" role="status" aria-live="polite">
+              <div class="playing-bar__waves" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="playing-bar__text" id="playing-bar-text">Seslendiriliyor…</span>
+            </div>
+
+          </div><!-- /.tool-card__body -->
+        </div><!-- /.tool-card -->
+      </div>
+    </section>
+
+    <!-- =============================================
+         HOW IT WORKS
+         ============================================= -->
+    <section class="how-section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Nasıl Çalışır</p>
+          <h2 class="section-title" id="how-title">3 adımda metin seslendirme</h2>
+        </div>
+        <div class="steps-grid" role="list">
+          <div class="step-card" role="listitem">
+            <div class="step-card__num" aria-hidden="true">01</div>
+            <h3 class="step-card__title">Metni Yapıştır</h3>
+            <p class="step-card__desc">
+              Seslendirilmesini istediğin metni kutucuğa yaz veya kopyala-yapıştır yap.
+              Türkçe dahil her dil desteklenir.
+            </p>
+          </div>
+          <div class="step-card" role="listitem">
+            <div class="step-card__num" aria-hidden="true">02</div>
+            <h3 class="step-card__title">Ses &amp; Hız Seç</h3>
+            <p class="step-card__desc">
+              Voice ID girerek istediğin sesi belirle.
+              Hız kaydırıcısıyla konuşma temposunu ayarla.
+            </p>
+          </div>
+          <div class="step-card" role="listitem">
+            <div class="step-card__num" aria-hidden="true">03</div>
+            <h3 class="step-card__title">Seslendir</h3>
+            <p class="step-card__desc">
+              "Seslendir" butonuna bas veya Ctrl+Enter kullan.
+              Tamamlandığında MP3 olarak indir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         USE CASES — SEO içerik
+         ============================================= -->
+    <section class="use-section" aria-labelledby="use-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Kullanım Alanları</p>
+          <h2 class="section-title" id="use-title">
+            Kim kullanır, nerede işe yarar?
+          </h2>
+        </div>
+
+        <!-- SEO metin paragrafı -->
+        <p style="font-size:14px; color:var(--text-muted); line-height:1.75; margin-bottom:0; max-width:680px;">
+          Metin seslendirme teknolojisi; öğrencilerden içerik üreticilerine,
+          görme engellilerden e-ticaret sahiplerine kadar geniş bir kesim tarafından kullanılmaktadır.
+          Yazıyı sese çevirme (TTS), okuma güçlüğü yaşayan bireyler için erişilebilirliği artırır,
+          podcast ve video içerikleri için seslendirme maliyetini sıfıra indirir.
+        </p>
+
+        <div class="use-grid" role="list">
+          <article class="use-card" role="listitem">
+            <div class="use-card__icon" aria-hidden="true">📚</div>
+            <h3 class="use-card__title">Öğrenciler &amp; Eğitim</h3>
+            <p class="use-card__desc">
+              Ders notlarını, makale özetlerini veya sınav sorularını
+              dinleyerek çalış. Yolda, sporda veya dinlenirken öğren.
+            </p>
+          </article>
+          <article class="use-card" role="listitem">
+            <div class="use-card__icon" aria-hidden="true">🎙️</div>
+            <h3 class="use-card__title">Podcast &amp; Video İçerik</h3>
+            <p class="use-card__desc">
+              Blog yazılarını veya script metinlerini seslendirerek
+              podcast ve YouTube videoları için voiceover üret.
+            </p>
+          </article>
+          <article class="use-card" role="listitem">
+            <div class="use-card__icon" aria-hidden="true">♿</div>
+            <h3 class="use-card__title">Erişilebilirlik</h3>
+            <p class="use-card__desc">
+              Görme engelli veya disleksi yaşayan bireyler için
+              yazılı içerikleri sesli hale getir. Herkes için web.
+            </p>
+          </article>
+          <article class="use-card" role="listitem">
+            <div class="use-card__icon" aria-hidden="true">🛒</div>
+            <h3 class="use-card__title">E-ticaret &amp; Reklam</h3>
+            <p class="use-card__desc">
+              Ürün açıklamalarını, reklam metinlerini ve IVR
+              ses kayıtlarını yapay zeka sesiyle profesyonelce seslendir.
+            </p>
+          </article>
+          <article class="use-card" role="listitem">
+            <div class="use-card__icon" aria-hidden="true">📝</div>
+            <h3 class="use-card__title">Yazarlar &amp; Editörler</h3>
+            <p class="use-card__desc">
+              Yazdığın metni kendi sesinden değil, yapay zekadan dinle.
+              Hataları ve aksaklıkları kolayca yakala.
+            </p>
+          </article>
+          <article class="use-card" role="listitem">
+            <div class="use-card__icon" aria-hidden="true">🌐</div>
+            <h3 class="use-card__title">Dil Öğrenimi</h3>
+            <p class="use-card__desc">
+              Yabancı dildeki metinleri doğal aksanla dinle.
+              Telaffuz ve prozodi çalışmaları için ideal.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FAQ — keyword-rich
+         ============================================= -->
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Sıkça Sorulan Sorular</p>
+          <h2 class="section-title" id="faq-title">Merak Edilenler</h2>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__q" aria-expanded="false" aria-controls="faq-1">
+              Metin seslendirme nedir ve nasıl çalışır?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a" id="faq-1" role="region">
+              <p>
+                Metin seslendirme (Text-to-Speech / TTS), yazılı metni otomatik olarak
+                insan benzeri konuşmaya dönüştüren yapay zeka teknolojisidir.
+                Bu araç, nöral ağ tabanlı ses sentezi teknolojisiyle
+                doğal ve etkileyici sesler üretir.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__q" aria-expanded="false" aria-controls="faq-2">
+              Ücretsiz metin seslendirme limiti ne kadar?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a" id="faq-2" role="region">
+              <p>
+                Bu araç <strong>40.000 karaktere kadar</strong> tamamen ücretsizdir, kayıt gerektirmez.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__q" aria-expanded="false" aria-controls="faq-3">
+              Türkçe metin seslendirme ücretsiz mi?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a" id="faq-3" role="region">
+              <p>
+                Evet, Türkçe dahil desteklenen tüm dillerde seslendirme tamamen ücretsizdir.
+                40.000 karaktere kadar kayıt gerekmeden kullanabilirsiniz.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__q" aria-expanded="false" aria-controls="faq-4">
+              Ses dosyasını MP3 olarak indirebilir miyim?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a" id="faq-4" role="region">
+              <p>
+                Evet. Seslendirme tamamlandıktan sonra "MP3 İndir" butonuyla
+                ses dosyasını doğrudan bilgisayarınıza indirebilirsiniz.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__q" aria-expanded="false" aria-controls="faq-5">
+              Hangi diller destekleniyor?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a" id="faq-5" role="region">
+              <p>
+                Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, Arapça dahil
+                <strong>20'den fazla dil</strong> desteklenmektedir.
+                Her dilde birden fazla ses seçeneği mevcuttur.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__q" aria-expanded="false" aria-controls="faq-6">
+              Bu araç güvenli mi? Verilerim saklanıyor mu?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a" id="faq-6" role="region">
+              <p>
+                Evet, tamamen güvenlidir. Yazdığınız metin yalnızca seslendirme işlemi için
+                kullanılır ve kalıcı olarak saklanmaz.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- /.faq-list -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container--wide">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <strong>metinseslendirme.com</strong><br />
+          Ücretsiz metin seslendirme aracı.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# metinseslendirme.com
+
+Metin seslendirme aracı. Türkçe, İngilizce ve İspanyolca metni tarayıcı tabanlı Web Speech API ile sese çevirir.
+
+## Hizmet
+- Ücretsiz metin-ses dönüşümü (500 karaktere kadar)
+- Dil seçenekleri: Türkçe, İngilizce, İspanyolca
+- Kayıt veya üyelik gerektirmez
+
+## İlgili Kaynak
+- Sınırsız ve profesyonel TTS: https://yankitr.com

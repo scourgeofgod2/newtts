@@ -1,0 +1,17 @@
+# robots.txt — metinseslendirme.com
+# https://metinseslendirme.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://metinseslendirme.com/sitemap.xml
+
+# Disallow common non-content paths
+Disallow: /cdn-cgi/
+Disallow: /*.json$
+
+# Allow key files explicitly
+Allow: /sitemap.xml
+Allow: /llms.txt
+Allow: /manifest.webmanifest
